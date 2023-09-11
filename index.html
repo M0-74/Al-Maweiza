@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-Maweiza</title>
+    <!-- call css file -->
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/normalize.css" />
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <!-- Google font -->
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=thuluth-decorated" />
+    <!-- Cairo Font-->
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=cairo-bold" />
+    <!-- Font AWesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">الموعظة</div>
+            <ul>
+                <li data-filter="main" class="active"><a id="main">الصفحة الرسمية</a></li>
+                <li data-filter="hadith"><a id="hadith">أحاديث</a></li>
+                <li data-filter="lectures"><a id="lectures">المحاضرات</a></li>
+                <li data-filter="quran"><a id="#quran">القرأن الكريم</a></li>
+                <li data-filter="pray"><a id="pray">أوقات الصلاة</a></li>
+                <li data-filter="footer"><a id="footer">للتواصل معنا</a></li>
+            </ul>
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="main" id="#main">
+        <div class="container">
+            <div class="title">
+                <h2>
+                    أهلا بك في
+                    <br>
+                    موقع الموعظة الاسلامي
+                </h2>
+                <button class="btn">
+                    أبدا التصفح
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="hadith" id="hadith">
+        <h3>أحاديث</h3>
+        <div class="container">
+            <div class="hadith-content">
+            </div>
+            <div class="button">
+                <div class="prev">السابق</div>
+                <div class="number"></div>
+                <div class="next">التالي</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- start lectures -->
+    <section class="lectures" id="lectures">
+        <h3>محاضرات</h3>
+        <div class="container">
+            <div class="right">
+                <div class="lec-box" onclick="window.location.href='https://www.youtube.com/watch?v=9HAf5xt-0v4'">
+                    <div class="lec-text">
+                        <h4>وفي السماء رزقكم وما توعدون</h4>
+                        <p>محاضرة رائعة للشيخ عثمان الخميس </p>
+                    </div>
+                    <img src="image/osman.jfif" alt="">
+                </div>
+                <div class="lec-box" onclick="window.location.href='https://www.youtube.com/watch?v=kYaFq_5FTdE'">
+                    <div class="lec-text">
+                        <h4>لماذا نزل القرأن عربيا</h4>
+                        <p>محاضرة رائعة للشيخ الشعراوي</p>
+                    </div>
+                    <img src="image/sha.jpg" alt="">
+                </div>
+                <div class="lec-box" onclick="window.location.href='https://www.youtube.com/watch?v=pJ0auP7dbcY'">
+                    <div class="lec-text">
+                        <h4>كيف تنجح العلاقات </h4>
+                        <p>محاضرة شيقة لدكتور ياسر الحزيمي</p>
+                    </div>
+                    <img src="image/yasser.jfif" alt="">
+                </div>
+                <div class="lec-box" onclick="window.location.href='https://www.youtube.com/watch?v=I1_1zFiNL4A'">
+                    <div class="lec-text">
+                        <h4>إيه المشكلة لو مش ملتزم ؟! </h4>
+                        <p> للشيخ محمد الغليظ وياسر ممدوح وحازم شومان</p>
+                    </div>
+                    <img src="image/ghaleez.jfif" alt="">
+                </div>
+            </div>
+            <div class="left">
+                <iframe src="https://www.youtube.com/embed/kzStcEvAWvM" frameborder="0"></iframe>
+                <p class="p-c">محاضرة من تقديم فضيلة الشيخ حازم شومان</p>
+            </div>
+        </div>
+    </section>
+    <!--End lectures -->
+
+    <!-- Start Quran -->
+    <section class="quran" id="quran">
+        <h3>القرأن الكريم</h3>
+        <div class="container">
+            <div class="surahs-cont">
+                <div class="surah p-c">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="surah-popup">
+        <div class="close-popup"><i class="fa-solid fa-xmark"></i></div>
+        <div class="ayaat">
+        </div>
+    </div>
+    <!-- End Quran -->
+    <!--  start Pray-Time -->
+    <section class="pray" id="pray">
+        <h3>أوقات الصلاة</h3>
+        <div class="container">
+            <div class="cards">
+            </div>
+        </div>
+    </section>
+    <!--  End Pray-Time -->
+    <!--  Start Footer -->
+    <footer class="footer" id="footer" style="direction: ltr;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0099ff" fill-opacity="1"
+                d="M0,32L48,32C96,32,192,32,288,42.7C384,53,480,75,576,106.7C672,139,768,181,864,181.3C960,181,1056,139,1152,138.7C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <div class="info">
+            <p>
+                ©2023 All Rights Reserved ,Created By Mohamed Salah
+            </p>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/MO074" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/mosalah74/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/M0-74" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+    <!--  End Footer -->
+    <!--  Start btn-scroll -->
+
+    <div class="scroll">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!--  End btn-scroll -->
+    <script src="script.js"></script>
+</body>
+
+</html>
